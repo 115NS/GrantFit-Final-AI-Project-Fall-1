@@ -1,0 +1,23 @@
+# Estimated staff hours per required component (per unit of quantity).
+base_overhead_hours: 4        # final review, formatting, submission
+default_component_hours: 3    # used (and flagged) for unrecognized components
+deadline_capacity_buffer: 1.2 # need capacity >= effort * buffer to call a deadline feasible
+components:
+  letter_of_inquiry: 6
+  narrative_page: 3
+  budget: 6
+  budget_narrative: 4
+  logic_model: 4
+  evaluation_plan: 6
+  letter_of_support: 3
+  audited_financials: 2
+  board_list: 1
+  attachment: 1
+  registration: 10            # e.g., SAM.gov / grants portal registration
+  site_visit: 6
+type_multipliers:
+  open_competitive: 1.0
+  government: 1.3
+  corporate: 0.9
+  invitation_only: 1.0
+  individual_philanthropy: 0.8

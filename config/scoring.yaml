@@ -1,0 +1,26 @@
+# Weights are normalized at runtime; scores are (rating-1)/4*100 per dimension.
+fit_weights:
+  mission_alignment: 0.30
+  population_alignment: 0.20
+  geography_alignment: 0.15
+  award_size_fit: 0.15
+  funder_priority_match: 0.20
+concept_weights:
+  problem_clarity: 0.15
+  logic_model: 0.20
+  measurable_outcomes: 0.20
+  feasibility: 0.20
+  budget_realism: 0.15
+  evidence_strength: 0.10
+thresholds:
+  # Thresholds are design choices, not empirically calibrated (see docs/decision_logic_audit.md).
+  fit_min: 50          # below -> DEPRIORITIZE   (50 = every fit dimension rated "adequate", 3/5)
+  concept_min: 60      # below -> STRENGTHEN_THEN_PURSUE (60 = average rating 3.4/5, above "adequate")
+  min_coverage: 0.6    # share of a score's weight that must be assessable; below -> no score
+value_blend:
+  fit: 0.6
+  concept: 0.4
+award_size_factor:
+  within_range: 1.0
+  outside_range: 0.5
+  unknown: 1.0

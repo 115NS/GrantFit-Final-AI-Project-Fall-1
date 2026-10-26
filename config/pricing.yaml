@@ -1,0 +1,8 @@
+# USD per 1M tokens. Fill in from your Portkey / provider pricing page.
+# Leave null if unknown: cost is then recorded as null with cost_source "unpriced".
+# GrantFit never guesses prices.
+models:
+  gpt-6-luna:
+    input_per_1m: null
+    cached_input_per_1m: null
+    output_per_1m: null

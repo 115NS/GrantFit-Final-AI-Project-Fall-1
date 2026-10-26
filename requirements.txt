@@ -1,0 +1,8 @@
+# Pinned for reproducibility (verified on Python 3.14.7; README targets 3.11+)
+openai==3.37.0
+pydantic==2.14.1
+python-dotenv==1.2.4
+PyYAML==6.0.3
+pytest==9.1.1
+dash==4.4.1
+requests==2.34.2

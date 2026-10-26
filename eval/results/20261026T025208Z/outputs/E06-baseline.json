@@ -1,0 +1,23 @@
+{
+  "eligibility": "UNKNOWN",
+  "failed_requirements": [],
+  "opportunity_type": "open_competitive",
+  "recommendation": "VERIFY_FIRST",
+  "concept_weaknesses": [
+    "The concept does not specify how the 70% benchmark-gain target will be calculated, including the baseline, assessment schedule, or treatment of students without complete pre/post data.",
+    "The plan does not explain how 40 tutors will be recruited, trained, supervised, and matched to 120 students.",
+    "The concept does not include a logic model or identify the two required letters of support."
+  ],
+  "unsupported_claims": [
+    "The claim that the tutoring model produced gains for most students in 2025 is not substantiated by the listed evidence, which reports that assessments were collected for 241 students but gives no results.",
+    "The claim that the program is proven to double reading growth is not supported by the listed evidence."
+  ],
+  "concerns": [
+    "Legal status is unknown, so it is not possible to confirm the 501(c)(3) or fiscal-sponsorship requirement.",
+    "Annual budget is not provided, so eligibility under the $3 million budget ceiling cannot be confirmed.",
+    "The target third school is not covered by the listed MOU with two schools; confirm its participation and whether it can provide a required letter of support.",
+    "The listed capacity of 30 staff hours per month may be insufficient for the proposed expansion and coordination, though feasibility cannot be determined from the information provided.",
+    "The opportunity requires two letters of support and audited financials. Audited financials are listed as available, but the concept does not indicate whether the letters can be secured."
+  ],
+  "rationale": "The opportunity is a strong topical and geographic fit: it prioritizes K\u20133 reading, family literacy engagement, and measurable outcomes, and the organization serves Connecticut students in those grades. However, two stated hard requirements cannot be checked because legal status and annual budget are missing. Confirm those requirements and the funder's application process before proceeding. The concept also needs stronger support for its evidence claims and a clearer implementation and measurement plan."
+}

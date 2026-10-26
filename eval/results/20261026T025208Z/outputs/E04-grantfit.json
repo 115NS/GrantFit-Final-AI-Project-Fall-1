@@ -1,0 +1,253 @@
+{
+  "run_id": "E04-grantfit",
+  "created_at": "2026-10-26T02:52:24.952931Z",
+  "as_of": "2026-10-25",
+  "llm_source": "live:gpt-6-luna",
+  "degraded_stages": [],
+  "nonprofit_id": "np-elm-city-reading",
+  "opportunity_id": "opp-ct-literacy-fund-2027",
+  "opportunity_type": "open_competitive",
+  "extraction": null,
+  "eligibility": {
+    "overall": "FAIL",
+    "checks": [
+      {
+        "criterion_id": "c1",
+        "kind": "legal_status",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Legal status '501c3' is allowed.",
+        "source_quote": "Applicants must be 501(c)(3) organizations or fiscally sponsored projects."
+      },
+      {
+        "criterion_id": "c2",
+        "kind": "budget_max",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Budget $850,000 meets requirement of at most $3,000,000.",
+        "source_quote": "Organizations with annual operating budgets of $3 million or less are eligible."
+      },
+      {
+        "criterion_id": "c3",
+        "kind": "geography",
+        "hard": true,
+        "status": "FAIL",
+        "reason": "Served areas ['New Haven, CT', 'West Haven, CT'] are outside allowed ['Massachusetts'].",
+        "source_quote": "Programs must primarily serve Massachusetts residents."
+      }
+    ],
+    "notes": []
+  },
+  "assessment": {
+    "fit": {
+      "mission_alignment": {
+        "score": 5,
+        "rationale": "The K-3 tutoring and family literacy activities closely match the organization’s early-literacy mission and the opportunity’s stated priorities.",
+        "evidence_refs": [
+          "profile.mission",
+          "opportunity.priorities[0]",
+          "opportunity.priorities[1]",
+          "concept.activities"
+        ]
+      },
+      "population_alignment": {
+        "score": 4,
+        "rationale": "The concept serves K-3 students and their families, matching the opportunity’s focus on early-grade reading and family engagement. The concept does not specify whether participants include low-income families or English language learners.",
+        "evidence_refs": [
+          "profile.populations_served",
+          "opportunity.priorities[0]",
+          "opportunity.priorities[1]",
+          "concept.target_population"
+        ]
+      },
+      "geography_alignment": {
+        "score": 1,
+        "rationale": "The opportunity’s verified geography criterion specifies Massachusetts, while the organization and proposed project serve New Haven, Connecticut.",
+        "evidence_refs": [
+          "opportunity.hard_criteria[2]",
+          "profile.geography_served",
+          "concept.target_population"
+        ]
+      },
+      "award_size_fit": {
+        "score": 5,
+        "rationale": "The $60,000 request falls within the stated award range of $25,000 to $75,000.",
+        "evidence_refs": [
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd",
+          "concept.requested_amount_usd"
+        ]
+      },
+      "funder_priority_match": {
+        "score": 2,
+        "rationale": "The concept addresses early-grade reading, family engagement, and measurable reading outcomes, but its Connecticut service area conflicts with the opportunity’s stated Massachusetts geography.",
+        "evidence_refs": [
+          "opportunity.priorities[0]",
+          "opportunity.priorities[1]",
+          "opportunity.priorities[2]",
+          "opportunity.hard_criteria[2]",
+          "concept.target_population",
+          "concept.outcomes"
+        ]
+      }
+    },
+    "concept": {
+      "problem_clarity": {
+        "score": 3,
+        "rationale": "The problem is framed around K-3 reading proficiency at partner schools, but the cited school-reported data are not included in the supplied evidence assets.",
+        "evidence_refs": [
+          "concept.problem_statement",
+          "profile.evidence_assets"
+        ]
+      },
+      "logic_model": {
+        "score": 4,
+        "rationale": "Recruiting and training tutors, providing recurring tutoring, and holding family literacy nights connect plausibly to the proposed student and family outcomes.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes",
+          "concept.target_population"
+        ]
+      },
+      "measurable_outcomes": {
+        "score": 4,
+        "rationale": "Both outcomes specify percentages and time-bound targets, though the DIBELS benchmark measure and attendance-tracking approach are not further defined.",
+        "evidence_refs": [
+          "concept.outcomes"
+        ]
+      },
+      "feasibility": {
+        "score": 3,
+        "rationale": "The activities and 12-month timeline are specified, but recruiting and training 40 tutors and launching at a third school may be demanding relative to the stated 30 staff-capacity hours per month. Support from the third school is not documented.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.timeline_months",
+          "concept.target_population",
+          "profile.staff_capacity_hours_per_month",
+          "profile.evidence_assets"
+        ]
+      },
+      "budget_realism": {
+        "score": 3,
+        "rationale": "The listed budget items add to the $60,000 request and align with the activities, but the supplied summary does not show cost assumptions or further detail for assessing the estimates.",
+        "evidence_refs": [
+          "concept.budget_summary",
+          "concept.requested_amount_usd",
+          "concept.activities"
+        ]
+      },
+      "evidence_strength": {
+        "score": 2,
+        "rationale": "The 2025 report documents tutoring volume and pre/post DIBELS assessments for 241 students, but the supplied assets do not state the assessment results or substantiate the specific claims of gains for most students or doubled reading growth.",
+        "evidence_refs": [
+          "profile.evidence_assets",
+          "concept.evidence_claims"
+        ]
+      }
+    },
+    "evidence_gaps": [
+      "Provide the school-reported data cited in the problem statement, including its source, date, and population covered.",
+      "Provide 2025 pre/post DIBELS results and analysis supporting any claims about student gains; substantiate or remove the claim that the model doubled reading growth.",
+      "Document the third school’s participation and support, such as a letter of support or partnership agreement.",
+      "Provide a tutor recruitment and training plan, staffing responsibilities, and capacity assumptions for serving 120 students.",
+      "Clarify how DIBELS benchmark-level gains and family attendance will be measured and tracked.",
+      "The opportunity’s verified geography criterion specifies Massachusetts, while this concept serves New Haven, Connecticut; clarify whether the proposed service geography can align with the stated criterion."
+    ],
+    "unsupported_claims": [
+      "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data).",
+      "Our tutoring model produced gains for most students in 2025.",
+      "Our program is proven to double reading growth."
+    ],
+    "confidence": "low",
+    "summary": "The concept is closely aligned with the opportunity’s literacy priorities and has a request within the award range. However, the proposed Connecticut service area conflicts with the stated Massachusetts geography, and key claims about reading performance are not substantiated by the supplied evidence assets. Feasibility also needs more detail on staffing and the third-school partnership."
+  },
+  "priority": {
+    "tier": "NOT_ELIGIBLE",
+    "tier_reasons": [
+      "Hard eligibility failure (c3): Served areas ['New Haven, CT', 'West Haven, CT'] are outside allowed ['Massachusetts']."
+    ],
+    "fit_score_0_100": 65.0,
+    "concept_score_0_100": 57.5,
+    "award_size_factor": 1.0,
+    "effort": {
+      "hours": 37.0,
+      "breakdown": {
+        "base_overhead": 4.0,
+        "narrative_page": 15.0,
+        "budget": 6.0,
+        "logic_model": 4.0,
+        "letter_of_support": 6.0,
+        "audited_financials": 2.0
+      },
+      "defaulted_components": []
+    },
+    "deadline": {
+      "feasible": true,
+      "days_left": 51,
+      "capacity_hours_available": 51.0,
+      "hours_needed_with_buffer": 44.4,
+      "reason": "51.0h of proposal capacity in 51 days vs. 44.4h needed (incl. buffer)."
+    },
+    "value_per_effort_hour": 1.68
+  },
+  "safety_flags": [
+    {
+      "kind": "unsupported_claim",
+      "source": "deterministic",
+      "detail": "strong claim wording ['proven', 'double'] not substantiated by evidence assets",
+      "excerpt": "Our program is proven to double reading growth"
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data)."
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Our tutoring model produced gains for most students in 2025."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "Our program is proven to double reading growth",
+      "source": "deterministic",
+      "reason": "strong claim wording ['proven', 'double'] not substantiated by evidence assets"
+    },
+    {
+      "claim": "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data).",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    },
+    {
+      "claim": "Our tutoring model produced gains for most students in 2025.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    }
+  ],
+  "validation_warnings": [],
+  "needs_human_review": true,
+  "review_reasons": [
+    "Eligibility FAIL: confirm against funder guidelines.",
+    "AI assessment confidence is low.",
+    "3 concept claim(s) not backed by listed evidence."
+  ],
+  "disclaimers": [
+    "GrantFit does not estimate or promise award probabilities.",
+    "Eligibility is checked only against the criteria supplied or verified from the guidelines; confirm all requirements with the funder.",
+    "Pasted guidelines are treated as untrusted data; requirements are used only when an exact quote was verified."
+  ],
+  "telemetry": {
+    "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T025208Z/traces/E04-grantfit.jsonl",
+    "llm_calls": 1,
+    "gateway_cache_hits": 0,
+    "input_tokens": 1908,
+    "cached_input_tokens": 1905,
+    "output_tokens": 2116,
+    "total_latency_ms": 16486.2,
+    "cost_usd": null,
+    "cost_source": "unpriced"
+  }
+}

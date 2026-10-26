@@ -1,0 +1,23 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "Annual operating budget must be $3 million or less; Elm City Reading Partners reports an annual budget of $4.2 million."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The concept proposes serving a third school, but the listed school partnership evidence covers only two New Haven elementary schools.",
+    "The outcome targets are not accompanied by a rationale or supporting baseline data for the proposed 120 additional students.",
+    "Managing 40 tutors, twice-weekly tutoring, monthly family nights, and outcome measurement may be demanding given the listed staff capacity of 30 hours per month."
+  ],
+  "unsupported_claims": [
+    "\u201cOur tutoring model produced gains for most students in 2025\u201d is not supported by the listed evidence, which reports that 241 students had pre/post DIBELS assessments but gives no results.",
+    "\u201cOur program is proven to double reading growth\u201d is not supported by the listed evidence."
+  ],
+  "concerns": [
+    "The stated problem that fewer than half of students read at grade level cites school-reported data, but no underlying figures or documentation are listed.",
+    "The opportunity requires two letters of support; the profile lists a partner MOU with two schools, but does not indicate that support letters are available.",
+    "The requested amount matches the budget summary total of $60,000."
+  ],
+  "rationale": "The organization meets the stated 501(c)(3) and Connecticut service requirements, but fails the hard annual-budget limit. Because that requirement makes the organization ineligible, the concept should not be submitted to this opportunity."
+}

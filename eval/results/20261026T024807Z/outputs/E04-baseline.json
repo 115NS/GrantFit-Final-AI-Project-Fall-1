@@ -1,0 +1,22 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "Geography: The opportunity requires programs to primarily serve Massachusetts residents, while the proposed project serves students and families in New Haven, Connecticut."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The proposed outcome that 70% of students will gain at least one DIBELS benchmark level needs a rationale grounded in prior results or other evidence.",
+    "The plan to recruit 40 tutors and provide twice-weekly sessions for 120 students would benefit from clearer implementation and volunteer-supervision details.",
+    "The proposal identifies a third New Haven school, but the listed evidence includes MOUs with only two schools."
+  ],
+  "unsupported_claims": [
+    "The claim that the tutoring model produced gains for most students in 2025 is not substantiated by the listed evidence, which notes that pre/post DIBELS assessments were collected for 241 students but provides no results.",
+    "The claim that the program is proven to double reading growth is not supported by the listed evidence.",
+    "The problem statement's claim that fewer than half of students at partner schools read at grade level is attributed to school-reported data, but that data is not included in the listed evidence."
+  ],
+  "concerns": [
+    "The project and organization serve Connecticut residents, contrary to the stated Massachusetts service-area requirement."
+  ],
+  "rationale": "The organization meets the stated legal-status and budget criteria, but the proposal clearly fails the opportunity's hard geography requirement. The recommendation is therefore NOT_ELIGIBLE regardless of the concept's alignment with the literacy priorities."
+}

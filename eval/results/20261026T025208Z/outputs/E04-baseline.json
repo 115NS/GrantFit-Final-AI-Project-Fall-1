@@ -1,0 +1,23 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "Geography: The opportunity requires programs to primarily serve Massachusetts residents. Elm City Reading Partners serves New Haven and West Haven, Connecticut."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The proposed expansion is to a third New Haven school, but the listed partner MOU covers only two schools; the concept does not establish a partnership with the new school.",
+    "The proposed 70% DIBELS benchmark-level gain and 60% family-night attendance outcomes lack a stated baseline or rationale.",
+    "The plan to recruit and train 40 volunteers and serve 120 students through twice-weekly tutoring may require more operational capacity than the profile's 30 staff hours per month indicates."
+  ],
+  "unsupported_claims": [
+    "\u201cFewer than half of K-3 students at partner schools read at grade level\u201d is attributed to school-reported data, but that data is not among the listed evidence assets.",
+    "\u201cOur tutoring model produced gains for most students in 2025\u201d is not substantiated by the listed evidence, which confirms assessments for 241 students but provides no results.",
+    "\u201cOur program is proven to double reading growth\u201d is not supported by the listed evidence; no growth results or comparison data are provided."
+  ],
+  "concerns": [
+    "The opportunity requires two letters of support, but the concept does not identify sources for them, including from the proposed third school.",
+    "The proposal budget totals the requested $60,000, but the 0.5 FTE coordinator allocation and workload should be reconciled with the stated staff capacity."
+  ],
+  "rationale": "The organization meets the stated 501(c)(3) and budget requirements, but it clearly fails the hard geographic requirement because it serves Connecticut rather than primarily serving Massachusetts residents. The concept also has evidence and implementation gaps, but the geographic failure is decisive."
+}

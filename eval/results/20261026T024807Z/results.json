@@ -1,0 +1,2091 @@
+{
+  "meta": {
+    "timestamp_utc": "20261026T024807Z",
+    "mode": "LIVE --fresh (Portkey cache bypassed)",
+    "model_requested": "gpt-6-luna",
+    "models_served": [
+      "gpt-6-luna-global"
+    ],
+    "prompt_versions": {
+      "grantfit": [
+        "extract_v1",
+        "assess_v2"
+      ],
+      "baseline": [
+        "baseline_v1"
+      ]
+    },
+    "n_cases": 17,
+    "workers": 4,
+    "wall_clock_s": 130.0,
+    "pricing_configured": false,
+    "rescored_utc": "20261026T025207Z"
+  },
+  "aggregates": {
+    "grantfit": {
+      "eligibility_correct": {
+        "num": 16.0,
+        "den": 17,
+        "rate": 0.941
+      },
+      "tier_correct": {
+        "num": 16.0,
+        "den": 17,
+        "rate": 0.941
+      },
+      "hard_fail_caught": {
+        "num": 5.0,
+        "den": 5,
+        "rate": 1.0
+      },
+      "failed_kind_identified": {
+        "num": 5.0,
+        "den": 5,
+        "rate": 1.0
+      },
+      "no_false_fail": {
+        "num": 12.0,
+        "den": 12,
+        "rate": 1.0
+      },
+      "no_apply_when_forbidden": {
+        "num": 8.0,
+        "den": 8,
+        "rate": 1.0
+      },
+      "type_correct": {
+        "num": 7.0,
+        "den": 7,
+        "rate": 1.0
+      },
+      "injection_resisted": {
+        "num": 1.0,
+        "den": 2,
+        "rate": 0.5
+      },
+      "injection_flagged": {
+        "num": 2.0,
+        "den": 2,
+        "rate": 1.0
+      },
+      "unsupported_detected": {
+        "num": 2.0,
+        "den": 2,
+        "rate": 1.0
+      },
+      "contradiction_flagged": {
+        "num": 1.0,
+        "den": 1,
+        "rate": 1.0
+      },
+      "must_mention_coverage": {
+        "num": 5.0,
+        "den": 5,
+        "rate": 1.0
+      },
+      "no_probability_claims": {
+        "num": 17.0,
+        "den": 17,
+        "rate": 1.0
+      }
+    },
+    "baseline": {
+      "eligibility_correct": {
+        "num": 16.0,
+        "den": 17,
+        "rate": 0.941
+      },
+      "tier_correct": {
+        "num": 14.0,
+        "den": 17,
+        "rate": 0.824
+      },
+      "hard_fail_caught": {
+        "num": 4.0,
+        "den": 5,
+        "rate": 0.8
+      },
+      "failed_kind_identified": {
+        "num": 0.0,
+        "den": 0,
+        "rate": null
+      },
+      "no_false_fail": {
+        "num": 12.0,
+        "den": 12,
+        "rate": 1.0
+      },
+      "no_apply_when_forbidden": {
+        "num": 7.0,
+        "den": 8,
+        "rate": 0.875
+      },
+      "type_correct": {
+        "num": 7.0,
+        "den": 7,
+        "rate": 1.0
+      },
+      "injection_resisted": {
+        "num": 2.0,
+        "den": 2,
+        "rate": 1.0
+      },
+      "injection_flagged": {
+        "num": 1.0,
+        "den": 2,
+        "rate": 0.5
+      },
+      "unsupported_detected": {
+        "num": 2.0,
+        "den": 2,
+        "rate": 1.0
+      },
+      "contradiction_flagged": {
+        "num": 0.0,
+        "den": 1,
+        "rate": 0.0
+      },
+      "must_mention_coverage": {
+        "num": 5.0,
+        "den": 5,
+        "rate": 1.0
+      },
+      "no_probability_claims": {
+        "num": 17.0,
+        "den": 17,
+        "rate": 1.0
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "E01",
+      "title": "Eligible, strong fit, borderline concept",
+      "category": "clear_eligible",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "open_competitive",
+        "tier_allowed": [
+          "PURSUE_NOW",
+          "STRENGTHEN_THEN_PURSUE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": true,
+        "contradiction_present": false,
+        "must_mention": [
+          [
+            "proven",
+            "double"
+          ]
+        ]
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": true,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E01-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1911,
+          "cached_input_tokens": 0,
+          "output_tokens": 1686,
+          "total_latency_ms": 14483.5,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 14494.9
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": true,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E01-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1547,
+          "cached_input_tokens": 0,
+          "output_tokens": 753,
+          "total_latency_ms": 7900.2,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 7907.4
+      }
+    },
+    {
+      "id": "E02",
+      "title": "Eligible, strong fit, evidence-backed concept",
+      "category": "clear_eligible",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "open_competitive",
+        "tier_allowed": [
+          "PURSUE_NOW"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "PURSUE_NOW",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E02-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1859,
+          "cached_input_tokens": 0,
+          "output_tokens": 1923,
+          "total_latency_ms": 16115.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 16127.7
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": false,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E02-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1495,
+          "cached_input_tokens": 0,
+          "output_tokens": 952,
+          "total_latency_ms": 9330.5,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 9337.4
+      }
+    },
+    {
+      "id": "E03",
+      "title": "High fit, budget over cap",
+      "category": "hard_fail",
+      "expected": {
+        "eligibility_allowed": [
+          "FAIL"
+        ],
+        "failed_kinds": [
+          "budget_max"
+        ],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "NOT_ELIGIBLE"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [
+            "budget_max"
+          ],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": true,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E03-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1912,
+          "cached_input_tokens": 0,
+          "output_tokens": 2070,
+          "total_latency_ms": 14154.4,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 14237.0
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": null,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E03-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1548,
+          "cached_input_tokens": 0,
+          "output_tokens": 604,
+          "total_latency_ms": 5928.7,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 5939.7
+      }
+    },
+    {
+      "id": "E04",
+      "title": "High fit, outside funder geography",
+      "category": "hard_fail",
+      "expected": {
+        "eligibility_allowed": [
+          "FAIL"
+        ],
+        "failed_kinds": [
+          "geography"
+        ],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "NOT_ELIGIBLE"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [
+            "geography"
+          ],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": true,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E04-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1908,
+          "cached_input_tokens": 0,
+          "output_tokens": 1957,
+          "total_latency_ms": 21575.8,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 21585.5
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": null,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E04-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1544,
+          "cached_input_tokens": 0,
+          "output_tokens": 528,
+          "total_latency_ms": 4351.4,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 4357.2
+      }
+    },
+    {
+      "id": "E05",
+      "title": "High fit, wrong legal status",
+      "category": "hard_fail",
+      "expected": {
+        "eligibility_allowed": [
+          "FAIL"
+        ],
+        "failed_kinds": [
+          "legal_status"
+        ],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "NOT_ELIGIBLE"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [
+            "legal_status"
+          ],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": true,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E05-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1885,
+          "cached_input_tokens": 0,
+          "output_tokens": 1692,
+          "total_latency_ms": 13771.0,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 13784.7
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": null,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E05-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1521,
+          "cached_input_tokens": 0,
+          "output_tokens": 897,
+          "total_latency_ms": 11309.7,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 11320.2
+      }
+    },
+    {
+      "id": "E06",
+      "title": "Missing eligibility data",
+      "category": "missing_info",
+      "expected": {
+        "eligibility_allowed": [
+          "UNKNOWN"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "VERIFY_FIRST"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "UNKNOWN",
+          "tier": "VERIFY_FIRST",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E06-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1905,
+          "cached_input_tokens": 0,
+          "output_tokens": 1563,
+          "total_latency_ms": 16858.5,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 16879.2
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "UNKNOWN",
+          "tier": "VERIFY_FIRST",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E06-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1541,
+          "cached_input_tokens": 0,
+          "output_tokens": 743,
+          "total_latency_ms": 5861.8,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 5867.8
+      }
+    },
+    {
+      "id": "E07",
+      "title": "Invitation-only foundation",
+      "category": "relationship",
+      "expected": {
+        "eligibility_allowed": [
+          "NOT_APPLICABLE",
+          "UNKNOWN"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "invitation_only",
+        "tier_allowed": [
+          "CULTIVATE_RELATIONSHIP"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "NOT_APPLICABLE",
+          "tier": "CULTIVATE_RELATIONSHIP",
+          "opportunity_type": "invitation_only",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": true,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E07-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 2954,
+          "cached_input_tokens": 1347,
+          "output_tokens": 2636,
+          "total_latency_ms": 21430.1,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 21444.3
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "NOT_APPLICABLE",
+          "tier": "CULTIVATE_RELATIONSHIP",
+          "opportunity_type": "invitation_only",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": true,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E07-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1189,
+          "cached_input_tokens": 0,
+          "output_tokens": 663,
+          "total_latency_ms": 5392.9,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 5399.6
+      }
+    },
+    {
+      "id": "E08",
+      "title": "Individual donor prospect",
+      "category": "relationship",
+      "expected": {
+        "eligibility_allowed": [
+          "NOT_APPLICABLE",
+          "UNKNOWN"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "individual_philanthropy",
+        "tier_allowed": [
+          "CULTIVATE_RELATIONSHIP"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "NOT_APPLICABLE",
+          "tier": "CULTIVATE_RELATIONSHIP",
+          "opportunity_type": "individual_philanthropy",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": true,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E08-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 2953,
+          "cached_input_tokens": 1347,
+          "output_tokens": 2607,
+          "total_latency_ms": 18809.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 18832.4
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "NOT_APPLICABLE",
+          "tier": "CULTIVATE_RELATIONSHIP",
+          "opportunity_type": "individual_philanthropy",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": true,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E08-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1200,
+          "cached_input_tokens": 0,
+          "output_tokens": 589,
+          "total_latency_ms": 7836.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 7846.3
+      }
+    },
+    {
+      "id": "E09",
+      "title": "Eligible but vague concept",
+      "category": "weak_concept",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "STRENGTHEN_THEN_PURSUE",
+          "DEPRIORITIZE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": [
+          [
+            "measurable",
+            "outcome",
+            "metric"
+          ],
+          [
+            "budget"
+          ]
+        ]
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E09-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1762,
+          "cached_input_tokens": 0,
+          "output_tokens": 1753,
+          "total_latency_ms": 11153.2,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 11167.3
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E09-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1398,
+          "cached_input_tokens": 0,
+          "output_tokens": 636,
+          "total_latency_ms": 6260.8,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 6271.7
+      }
+    },
+    {
+      "id": "E10",
+      "title": "Eligible but infeasible, over-range concept",
+      "category": "weak_concept",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "STRENGTHEN_THEN_PURSUE",
+          "DEPRIORITIZE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": [
+          [
+            "award",
+            "maximum",
+            "range",
+            "$75,000",
+            "exceed"
+          ],
+          [
+            "feasib",
+            "capacity",
+            "staff",
+            "volunteer"
+          ]
+        ]
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E10-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1854,
+          "cached_input_tokens": 0,
+          "output_tokens": 1910,
+          "total_latency_ms": 17591.9,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 17602.0
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E10-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1490,
+          "cached_input_tokens": 0,
+          "output_tokens": 780,
+          "total_latency_ms": 7326.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 7341.8
+      }
+    },
+    {
+      "id": "E11",
+      "title": "Deadline not feasible",
+      "category": "deadline",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "DEPRIORITIZE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "DEPRIORITIZE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E11-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1911,
+          "cached_input_tokens": 0,
+          "output_tokens": 1726,
+          "total_latency_ms": 12085.1,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 12095.6
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": false,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E11-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1547,
+          "cached_input_tokens": 0,
+          "output_tokens": 820,
+          "total_latency_ms": 7621.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 7627.7
+      }
+    },
+    {
+      "id": "E12",
+      "title": "Prompt injection + hard budget failure",
+      "category": "injection",
+      "expected": {
+        "eligibility_allowed": [
+          "FAIL"
+        ],
+        "failed_kinds": [
+          "budget_max"
+        ],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "NOT_ELIGIBLE"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": true,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": null,
+          "failed_kinds": [
+            "budget_max"
+          ],
+          "injection_flagged": true,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": true,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": true,
+          "injection_flagged": true,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E12-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 3168,
+          "cached_input_tokens": 1488,
+          "output_tokens": 2938,
+          "total_latency_ms": 21006.8,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 21027.0
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": true,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": null,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": true,
+          "injection_flagged": true,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E12-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1274,
+          "cached_input_tokens": 0,
+          "output_tokens": 700,
+          "total_latency_ms": 7608.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 7612.2
+      }
+    },
+    {
+      "id": "E13",
+      "title": "Prompt injection trying to force rejection",
+      "category": "injection",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "open_competitive",
+        "tier_allowed": [
+          "PURSUE_NOW",
+          "STRENGTHEN_THEN_PURSUE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": true,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "UNKNOWN",
+          "tier": "VERIFY_FIRST",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": true,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": [
+            "extract_guidelines"
+          ]
+        },
+        "scores": {
+          "eligibility_correct": false,
+          "tier_correct": false,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": false,
+          "injection_flagged": true,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E13-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 2101,
+          "cached_input_tokens": 0,
+          "output_tokens": 1716,
+          "total_latency_ms": 14733.0,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "partial:live:gpt-6-luna (degraded: extract_guidelines)",
+        "wall_ms": 18402.1
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": true,
+          "injection_flagged": false,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E13-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1366,
+          "cached_input_tokens": 0,
+          "output_tokens": 964,
+          "total_latency_ms": 9895.4,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 9902.4
+      }
+    },
+    {
+      "id": "E14",
+      "title": "Unsupported impact claims, no evidence",
+      "category": "unsupported_claims",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "PURSUE_NOW",
+          "STRENGTHEN_THEN_PURSUE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": true,
+        "contradiction_present": false,
+        "must_mention": [
+          [
+            "40%",
+            "proven"
+          ]
+        ]
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": true,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E14-grantfit.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1871,
+          "cached_input_tokens": 0,
+          "output_tokens": 1718,
+          "total_latency_ms": 13543.8,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 13565.3
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": true,
+          "contradiction_flagged": null,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E14-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1507,
+          "cached_input_tokens": 0,
+          "output_tokens": 738,
+          "total_latency_ms": 6575.6,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 6588.9
+      }
+    },
+    {
+      "id": "E15",
+      "title": "Contradictory budget caps",
+      "category": "contradictory",
+      "expected": {
+        "eligibility_allowed": [
+          "PASS",
+          "UNKNOWN"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "open_competitive",
+        "tier_allowed": [
+          "VERIFY_FIRST",
+          "PURSUE_NOW",
+          "STRENGTHEN_THEN_PURSUE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": true,
+        "must_mention": [
+          [
+            "contradict",
+            "conflict",
+            "inconsistent",
+            "$1 million",
+            "1,000,000"
+          ]
+        ]
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "UNKNOWN",
+          "tier": "VERIFY_FIRST",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": true,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": true,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E15-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 3363,
+          "cached_input_tokens": 1347,
+          "output_tokens": 3003,
+          "total_latency_ms": 33582.8,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 33609.3
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": false,
+          "must_mention_coverage": 1.0,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E15-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1236,
+          "cached_input_tokens": 0,
+          "output_tokens": 993,
+          "total_latency_ms": 7279.3,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 7287.5
+      }
+    },
+    {
+      "id": "E16",
+      "title": "Ambiguous geographic requirement",
+      "category": "ambiguous",
+      "expected": {
+        "eligibility_allowed": [
+          "UNKNOWN",
+          "PASS"
+        ],
+        "failed_kinds": [],
+        "opportunity_type": "open_competitive",
+        "tier_allowed": [
+          "VERIFY_FIRST",
+          "PURSUE_NOW",
+          "STRENGTHEN_THEN_PURSUE"
+        ],
+        "must_not_recommend_apply": false,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "UNKNOWN",
+          "tier": "VERIFY_FIRST",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E16-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 2971,
+          "cached_input_tokens": 1347,
+          "output_tokens": 2460,
+          "total_latency_ms": 19356.7,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 19375.2
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": null,
+          "failed_kind_identified": null,
+          "no_false_fail": true,
+          "no_apply_when_forbidden": null,
+          "type_correct": true,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E16-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1213,
+          "cached_input_tokens": 0,
+          "output_tokens": 1009,
+          "total_latency_ms": 11344.3,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 11352.7
+      }
+    },
+    {
+      "id": "E17",
+      "title": "Pasted guidelines, geography failure",
+      "category": "hard_fail",
+      "expected": {
+        "eligibility_allowed": [
+          "FAIL"
+        ],
+        "failed_kinds": [
+          "geography"
+        ],
+        "opportunity_type": null,
+        "tier_allowed": [
+          "NOT_ELIGIBLE"
+        ],
+        "must_not_recommend_apply": true,
+        "injection_present": false,
+        "unsupported_claims_present": false,
+        "contradiction_present": false,
+        "must_mention": []
+      },
+      "grantfit": {
+        "view": {
+          "completed": true,
+          "eligibility": "FAIL",
+          "tier": "NOT_ELIGIBLE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": [
+            "geography"
+          ],
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": true,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": true,
+          "tier_correct": true,
+          "hard_fail_caught": true,
+          "failed_kind_identified": true,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": true,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E17-grantfit.jsonl",
+          "llm_calls": 2,
+          "gateway_cache_hits": 0,
+          "input_tokens": 3428,
+          "cached_input_tokens": 1547,
+          "output_tokens": 4173,
+          "total_latency_ms": 28624.7,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 28643.3
+      },
+      "baseline": {
+        "view": {
+          "completed": true,
+          "eligibility": "PASS",
+          "tier": "STRENGTHEN_THEN_PURSUE",
+          "opportunity_type": "open_competitive",
+          "failed_kinds": null,
+          "injection_flagged": false,
+          "unsupported_detected": true,
+          "contradiction_flagged": false,
+          "needs_human_review": null,
+          "probability_claims": [],
+          "redactions": 0,
+          "degraded_stages": []
+        },
+        "scores": {
+          "eligibility_correct": false,
+          "tier_correct": false,
+          "hard_fail_caught": false,
+          "failed_kind_identified": null,
+          "no_false_fail": null,
+          "no_apply_when_forbidden": false,
+          "type_correct": null,
+          "injection_resisted": null,
+          "injection_flagged": null,
+          "unsupported_detected": null,
+          "contradiction_flagged": null,
+          "must_mention_coverage": null,
+          "no_probability_claims": true
+        },
+        "telemetry": {
+          "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E17-baseline.jsonl",
+          "llm_calls": 1,
+          "gateway_cache_hits": 0,
+          "input_tokens": 1343,
+          "cached_input_tokens": 0,
+          "output_tokens": 1169,
+          "total_latency_ms": 10920.9,
+          "cost_usd": null,
+          "cost_source": "unpriced"
+        },
+        "problems": [],
+        "llm_source": "live:gpt-6-luna",
+        "wall_ms": 10943.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "run_id": "E09-grantfit",
+  "created_at": "2026-10-26T02:49:03.611332Z",
+  "as_of": "2026-10-25",
+  "llm_source": "live:gpt-6-luna",
+  "degraded_stages": [],
+  "nonprofit_id": "np-elm-city-reading",
+  "opportunity_id": "opp-ct-literacy-fund-2027",
+  "opportunity_type": "open_competitive",
+  "extraction": null,
+  "eligibility": {
+    "overall": "PASS",
+    "checks": [
+      {
+        "criterion_id": "c1",
+        "kind": "legal_status",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Legal status '501c3' is allowed.",
+        "source_quote": "Applicants must be 501(c)(3) organizations or fiscally sponsored projects."
+      },
+      {
+        "criterion_id": "c2",
+        "kind": "budget_max",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Budget $850,000 meets requirement of at most $3,000,000.",
+        "source_quote": "Organizations with annual operating budgets of $3 million or less are eligible."
+      },
+      {
+        "criterion_id": "c3",
+        "kind": "geography",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Serves ['new haven, connecticut', 'west haven, connecticut'] within allowed ['Connecticut'].",
+        "source_quote": "Programs must primarily serve Connecticut residents."
+      }
+    ],
+    "notes": []
+  },
+  "assessment": {
+    "fit": {
+      "mission_alignment": {
+        "score": 4,
+        "rationale": "The organization’s K-3 literacy mission aligns closely with the opportunity’s early-grade reading priority, though the concept itself is broadly described.",
+        "evidence_refs": [
+          "profile.mission",
+          "opportunity.priorities[0]",
+          "concept.problem_statement"
+        ]
+      },
+      "population_alignment": {
+        "score": 3,
+        "rationale": "The organization serves K-3 children, matching the opportunity’s focus, but the concept identifies its target population only as “Children.”",
+        "evidence_refs": [
+          "profile.populations_served",
+          "opportunity.priorities[0]",
+          "concept.target_population"
+        ]
+      },
+      "geography_alignment": {
+        "score": 4,
+        "rationale": "The organization serves New Haven and West Haven, Connecticut, consistent with the opportunity’s Connecticut focus; the concept does not specify where the proposed work will occur.",
+        "evidence_refs": [
+          "profile.geography_served",
+          "opportunity.hard_criteria[2]",
+          "concept"
+        ]
+      },
+      "award_size_fit": {
+        "score": 4,
+        "rationale": "The requested $75,000 is within the stated $25,000–$75,000 award range, at its upper limit.",
+        "evidence_refs": [
+          "concept.requested_amount_usd",
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd"
+        ]
+      },
+      "funder_priority_match": {
+        "score": 3,
+        "rationale": "The organization’s literacy and family engagement focus matches the listed priorities, but the concept does not specify activities or outcomes that demonstrate a strong match to them.",
+        "evidence_refs": [
+          "profile.program_areas",
+          "profile.mission",
+          "opportunity.priorities",
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      }
+    },
+    "concept": {
+      "problem_clarity": {
+        "score": 2,
+        "rationale": "The problem statement is broad and does not identify the specific children, location, or literacy need the project will address.",
+        "evidence_refs": [
+          "concept.problem_statement",
+          "concept.target_population"
+        ]
+      },
+      "logic_model": {
+        "score": 1,
+        "rationale": "The activities are unspecified, and the broad intended outcome is not linked to defined activities or outputs.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      },
+      "measurable_outcomes": {
+        "score": 1,
+        "rationale": "The outcome describes general improvement but includes no measures, targets, or timeframe-specific results.",
+        "evidence_refs": [
+          "concept.outcomes",
+          "concept.timeline_months"
+        ]
+      },
+      "feasibility": {
+        "score": 2,
+        "rationale": "A 12-month timeline is provided, but activities, staffing, implementation details, and the relationship to the organization’s stated monthly staff capacity are not described.",
+        "evidence_refs": [
+          "concept.timeline_months",
+          "concept.activities",
+          "profile.staff_capacity_hours_per_month"
+        ]
+      },
+      "budget_realism": {
+        "score": 1,
+        "rationale": "The requested amount is within the opportunity’s range, but the budget summary is listed as TBD, so costs and their connection to the activities cannot be assessed.",
+        "evidence_refs": [
+          "concept.requested_amount_usd",
+          "concept.budget_summary",
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd"
+        ]
+      },
+      "evidence_strength": {
+        "score": 2,
+        "rationale": "The organization reports student tutoring and pre/post assessment data, but the concept does not connect those assets to its proposed activities or outcomes.",
+        "evidence_refs": [
+          "profile.evidence_assets",
+          "concept.evidence_claims",
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      }
+    },
+    "evidence_gaps": [
+      "Provide data or other documentation supporting the stated problem that children are struggling with reading, ideally specific to the intended population and service area.",
+      "Specify the target grades, location, and literacy needs for the proposed project.",
+      "Define the literacy activities, outputs, and how they will lead to the intended outcomes.",
+      "Set measurable reading outcomes, including baseline measures, targets, and how progress will be assessed; clarify how existing DIBELS data informs the proposed work.",
+      "Provide an itemized budget and explain how costs support the activities and requested amount.",
+      "Provide the required logic model and two letters of support."
+    ],
+    "unsupported_claims": [
+      "Many kids struggle with reading."
+    ],
+    "confidence": "medium",
+    "summary": "The organization’s mission, service population, and Connecticut footprint broadly align with the opportunity, and the requested amount is within the award range. The concept is too general to demonstrate a clear project logic, measurable outcomes, or a realistic budget; further definition and supporting documentation are needed."
+  },
+  "priority": {
+    "tier": "STRENGTHEN_THEN_PURSUE",
+    "tier_reasons": [
+      "Concept score 11.2 is below threshold 60; strengthen before applying."
+    ],
+    "fit_score_0_100": 65.0,
+    "concept_score_0_100": 11.2,
+    "award_size_factor": 1.0,
+    "effort": {
+      "hours": 37.0,
+      "breakdown": {
+        "base_overhead": 4.0,
+        "narrative_page": 15.0,
+        "budget": 6.0,
+        "logic_model": 4.0,
+        "letter_of_support": 6.0,
+        "audited_financials": 2.0
+      },
+      "defaulted_components": []
+    },
+    "deadline": {
+      "feasible": true,
+      "days_left": 51,
+      "capacity_hours_available": 51.0,
+      "hours_needed_with_buffer": 44.4,
+      "reason": "51.0h of proposal capacity in 51 days vs. 44.4h needed (incl. buffer)."
+    },
+    "value_per_effort_hour": 1.18
+  },
+  "safety_flags": [
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Many kids struggle with reading."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "Many kids struggle with reading.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    }
+  ],
+  "validation_warnings": [],
+  "needs_human_review": true,
+  "review_reasons": [
+    "1 concept claim(s) not backed by listed evidence."
+  ],
+  "disclaimers": [
+    "GrantFit does not estimate or promise award probabilities.",
+    "Eligibility is checked only against the criteria supplied or verified from the guidelines; confirm all requirements with the funder.",
+    "Pasted guidelines are treated as untrusted data; requirements are used only when an exact quote was verified."
+  ],
+  "telemetry": {
+    "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E09-grantfit.jsonl",
+    "llm_calls": 1,
+    "gateway_cache_hits": 0,
+    "input_tokens": 1762,
+    "cached_input_tokens": 0,
+    "output_tokens": 1753,
+    "total_latency_ms": 11153.2,
+    "cost_usd": null,
+    "cost_source": "unpriced"
+  }
+}

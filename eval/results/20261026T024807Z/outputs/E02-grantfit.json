@@ -1,0 +1,236 @@
+{
+  "run_id": "E02-grantfit",
+  "created_at": "2026-10-26T02:48:23.421686Z",
+  "as_of": "2026-10-25",
+  "llm_source": "live:gpt-6-luna",
+  "degraded_stages": [],
+  "nonprofit_id": "np-quinnipiac-food",
+  "opportunity_id": "opp-hartford-hunger-2027",
+  "opportunity_type": "open_competitive",
+  "extraction": null,
+  "eligibility": {
+    "overall": "PASS",
+    "checks": [
+      {
+        "criterion_id": "c1",
+        "kind": "legal_status",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Legal status '501c3' is allowed.",
+        "source_quote": "Applicants must be registered 501(c)(3) nonprofits."
+      },
+      {
+        "criterion_id": "c2",
+        "kind": "budget_max",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Budget $1,200,000 meets requirement of at most $5,000,000.",
+        "source_quote": "Organizations with annual budgets up to $5 million may apply."
+      },
+      {
+        "criterion_id": "c3",
+        "kind": "geography",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Serves ['hamden, connecticut', 'north haven, connecticut', 'wallingford, connecticut'] within allowed ['Connecticut'].",
+        "source_quote": "Services must be delivered in Connecticut."
+      }
+    ],
+    "notes": []
+  },
+  "assessment": {
+    "fit": {
+      "mission_alignment": {
+        "score": 5,
+        "rationale": "The proposed produce delivery directly advances the mission of reliable access to healthy food.",
+        "evidence_refs": [
+          "profile.mission",
+          "concept.title",
+          "concept.activities"
+        ]
+      },
+      "population_alignment": {
+        "score": 5,
+        "rationale": "The concept serves homebound seniors, matching both the organization’s population and the opportunity’s senior food access focus.",
+        "evidence_refs": [
+          "profile.populations_served",
+          "concept.target_population",
+          "opportunity.priorities[0]"
+        ]
+      },
+      "geography_alignment": {
+        "score": 5,
+        "rationale": "Hamden and North Haven are in Connecticut and are listed among the organization’s service areas.",
+        "evidence_refs": [
+          "profile.geography_served",
+          "concept.target_population",
+          "opportunity.hard_criteria[2]"
+        ]
+      },
+      "award_size_fit": {
+        "score": 5,
+        "rationale": "The $50,000 request falls within the opportunity’s $20,000–$80,000 award range.",
+        "evidence_refs": [
+          "concept.requested_amount_usd",
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd"
+        ]
+      },
+      "funder_priority_match": {
+        "score": 5,
+        "rationale": "The concept centers on food access for homebound seniors, fresh produce and nutrition, and referrals through a senior service provider.",
+        "evidence_refs": [
+          "opportunity.priorities[0]",
+          "opportunity.priorities[1]",
+          "opportunity.priorities[2]",
+          "concept.activities",
+          "concept.target_population"
+        ]
+      }
+    },
+    "concept": {
+      "problem_clarity": {
+        "score": 3,
+        "rationale": "The target group and proposed food-access issue are identified, but the supplied evidence does not establish that participants currently receive little fresh produce or that there is strong demand for it.",
+        "evidence_refs": [
+          "concept.problem_statement",
+          "profile.evidence_assets[0]",
+          "profile.evidence_assets[1]"
+        ]
+      },
+      "logic_model": {
+        "score": 4,
+        "rationale": "Sourcing, packing, and delivery activities plausibly connect to the produce-box and reported-consumption outcomes; the role of nutrition check-ins in achieving outcomes is less specified.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      },
+      "measurable_outcomes": {
+        "score": 4,
+        "rationale": "The concept specifies a participant count, box frequency, timeline, and a percentage target measured by survey, though the survey method and baseline are not described.",
+        "evidence_refs": [
+          "concept.outcomes",
+          "concept.timeline_months"
+        ]
+      },
+      "feasibility": {
+        "score": 3,
+        "rationale": "The 12-month plan is concrete and a senior-center referral agreement is documented, but farm commitments, delivery logistics, and available staff capacity for the planned volume are not established.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes",
+          "concept.timeline_months",
+          "concept.budget_summary",
+          "profile.staff_capacity_hours_per_month",
+          "profile.evidence_assets[2]"
+        ]
+      },
+      "budget_realism": {
+        "score": 3,
+        "rationale": "The line items add to the $50,000 request and are tied to activities, but unit costs and assumptions—especially produce cost per box and delivery costs—are not provided.",
+        "evidence_refs": [
+          "concept.budget_summary",
+          "concept.requested_amount_usd",
+          "concept.outcomes"
+        ]
+      },
+      "evidence_strength": {
+        "score": 4,
+        "rationale": "Existing delivery records and survey results support the organization’s experience with senior food delivery and fresh-produce outcomes, but they do not document the stated current produce gap or directly validate this project’s targets.",
+        "evidence_refs": [
+          "profile.evidence_assets[0]",
+          "profile.evidence_assets[1]",
+          "concept.evidence_claims"
+        ]
+      }
+    },
+    "evidence_gaps": [
+      "Provide baseline or needs-assessment evidence showing participants’ current access to fresh produce and supporting the stated demand.",
+      "Document commitments or sourcing plans from the two local farms, including expected supply and pricing.",
+      "Add delivery and staffing plans showing how 150 participants will receive at least 45 boxes each, given the stated staff capacity.",
+      "Provide per-box and delivery cost assumptions supporting the budget, particularly the produce and driver-stipend lines.",
+      "Describe the survey instrument, baseline, and follow-up process for measuring the 75% produce-consumption outcome."
+    ],
+    "unsupported_claims": [
+      "410 homebound seniors on our delivery list receive shelf-stable meals but little fresh produce.",
+      "Our 2025 survey shows strong demand for produce."
+    ],
+    "confidence": "medium",
+    "summary": "The concept closely matches the opportunity’s senior food access, fresh produce, and provider-partnership priorities, and its request is within the stated award range. It presents clear activities and numeric outcomes, but documentation of the produce-access need, sourcing and delivery feasibility, and budget assumptions would strengthen the proposal."
+  },
+  "priority": {
+    "tier": "PURSUE_NOW",
+    "tier_reasons": [
+      "Eligible, fit 100.0, concept 62.5; deadline: 130.7h of proposal capacity in 98 days vs. 33.6h needed (incl. buffer)."
+    ],
+    "fit_score_0_100": 100.0,
+    "concept_score_0_100": 62.5,
+    "award_size_factor": 1.0,
+    "effort": {
+      "hours": 28.0,
+      "breakdown": {
+        "base_overhead": 4.0,
+        "narrative_page": 12.0,
+        "budget": 6.0,
+        "evaluation_plan": 6.0
+      },
+      "defaulted_components": []
+    },
+    "deadline": {
+      "feasible": true,
+      "days_left": 98,
+      "capacity_hours_available": 130.7,
+      "hours_needed_with_buffer": 33.6,
+      "reason": "130.7h of proposal capacity in 98 days vs. 33.6h needed (incl. buffer)."
+    },
+    "value_per_effort_hour": 3.04
+  },
+  "safety_flags": [
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "410 homebound seniors on our delivery list receive shelf-stable meals but little fresh produce."
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Our 2025 survey shows strong demand for produce."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "410 homebound seniors on our delivery list receive shelf-stable meals but little fresh produce.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    },
+    {
+      "claim": "Our 2025 survey shows strong demand for produce.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    }
+  ],
+  "validation_warnings": [],
+  "needs_human_review": true,
+  "review_reasons": [
+    "2 concept claim(s) not backed by listed evidence."
+  ],
+  "disclaimers": [
+    "GrantFit does not estimate or promise award probabilities.",
+    "Eligibility is checked only against the criteria supplied or verified from the guidelines; confirm all requirements with the funder.",
+    "Pasted guidelines are treated as untrusted data; requirements are used only when an exact quote was verified."
+  ],
+  "telemetry": {
+    "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E02-grantfit.jsonl",
+    "llm_calls": 1,
+    "gateway_cache_hits": 0,
+    "input_tokens": 1859,
+    "cached_input_tokens": 0,
+    "output_tokens": 1923,
+    "total_latency_ms": 16115.6,
+    "cost_usd": null,
+    "cost_source": "unpriced"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "E02",
+  "title": "Eligible, strong fit, evidence-backed concept",
+  "category": "clear_eligible",
+  "description": "Food-security org with a specific, budgeted, evidence-backed concept within the award range and ample time before the deadline.",
+  "as_of": "2026-10-25",
+  "case": {
+    "profile": {
+      "id": "np-quinnipiac-food",
+      "name": "Quinnipiac Valley Food Network (fictional)",
+      "legal_status": "501c3",
+      "annual_budget_usd": 1200000.0,
+      "founded_year": 2009,
+      "geography_served": [
+        "Hamden, CT",
+        "North Haven, CT",
+        "Wallingford, CT"
+      ],
+      "mission": "Ensure every household in the Quinnipiac Valley has reliable access to healthy food.",
+      "program_areas": [
+        "food security",
+        "senior services",
+        "nutrition"
+      ],
+      "populations_served": [
+        "homebound seniors",
+        "low-income households"
+      ],
+      "staff_capacity_hours_per_month": 40.0,
+      "prior_funders": [],
+      "evidence_assets": [
+        "FY2025 delivery log: 18,400 meals delivered to 410 homebound seniors",
+        "2025 client survey (n=212): 87% reported eating more fresh produce",
+        "Partnership agreement with Hamden Senior Center for referrals"
+      ],
+      "audited_financials": true
+    },
+    "opportunity": {
+      "id": "opp-hartford-hunger-2027",
+      "funder_name": "Greater Hartford Hunger Relief Fund (fictional)",
+      "title": "Senior Food Access Grants",
+      "opportunity_type": "open_competitive",
+      "deadline": "2027-01-31",
+      "award_min_usd": 20000.0,
+      "award_max_usd": 80000.0,
+      "hard_criteria": [
+        {
+          "id": "c1",
+          "kind": "legal_status",
+          "value": [
+            "501c3"
+          ],
+          "description": "",
+          "source_quote": "Applicants must be registered 501(c)(3) nonprofits.",
+          "verified": true,
+          "hard": true
+        },
+        {
+          "id": "c2",
+          "kind": "budget_max",
+          "value": 5000000,
+          "description": "",
+          "source_quote": "Organizations with annual budgets up to $5 million may apply.",
+          "verified": true,
+          "hard": true
+        },
+        {
+          "id": "c3",
+          "kind": "geography",
+          "value": [
+            "Connecticut"
+          ],
+          "description": "",
+          "source_quote": "Services must be delivered in Connecticut.",
+          "verified": true,
+          "hard": true
+        }
+      ],
+      "priorities": [
+        "Food access for homebound seniors",
+        "Fresh produce and nutrition",
+        "Partnerships with senior service providers"
+      ],
+      "restrictions": [],
+      "required_components": [
+        {
+          "name": "narrative_page",
+          "quantity": 4
+        },
+        {
+          "name": "budget",
+          "quantity": 1
+        },
+        {
+          "name": "evaluation_plan",
+          "quantity": 1
+        }
+      ],
+      "source_text": null,
+      "source_url": null
+    },
+    "concept": {
+      "title": "Fresh Routes: weekly produce boxes for homebound seniors",
+      "problem_statement": "410 homebound seniors on our delivery list receive shelf-stable meals but little fresh produce; our 2025 survey shows strong demand for produce.",
+      "target_population": "150 homebound seniors in Hamden and North Haven referred by Hamden Senior Center",
+      "activities": [
+        "Source produce from two local farms",
+        "Pack and deliver weekly produce boxes",
+        "Quarterly nutrition check-ins by phone"
+      ],
+      "outcomes": [
+        "150 seniors receive 45+ produce boxes each over 12 months",
+        "75% of participants report eating more fresh produce at 6 and 12 months (survey)"
+      ],
+      "evidence_claims": [
+        "We delivered 18,400 meals to 410 homebound seniors in FY2025",
+        "87% of surveyed clients reported eating more fresh produce"
+      ],
+      "requested_amount_usd": 50000.0,
+      "timeline_months": 12,
+      "budget_summary": "Produce purchasing ($27k), driver stipends ($12k), packing supplies ($4k), coordinator 0.1 FTE ($7k); total $50k."
+    }
+  },
+  "expected": {
+    "eligibility_allowed": [
+      "PASS"
+    ],
+    "failed_kinds": [],
+    "opportunity_type": "open_competitive",
+    "tier_allowed": [
+      "PURSUE_NOW"
+    ],
+    "must_not_recommend_apply": false,
+    "injection_present": false,
+    "unsupported_claims_present": false,
+    "contradiction_present": false,
+    "must_mention": []
+  }
+}

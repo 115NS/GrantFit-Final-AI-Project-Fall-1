@@ -1,0 +1,22 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "The applicant's legal status is listed as \"other,\" not 501(c)(3) public charity, as required by criterion c1."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The 70% student benchmark-gain and 60% family-attendance targets are not explained or tied to baseline results or prior performance.",
+    "The concept proposes serving a third school, but the listed evidence documents MOUs with only two schools.",
+    "The scale of recruiting and training 40 tutors and serving 120 additional students may require more capacity than the profile's 30 staff hours per month indicates."
+  ],
+  "unsupported_claims": [
+    "\"Our tutoring model produced gains for most students in 2025\" is not supported by the listed evidence, which reports assessments for 241 students but provides no results.",
+    "\"Our program is proven to double reading growth\" is not supported by the listed evidence."
+  ],
+  "concerns": [
+    "The opportunity also requires two letters of support; none are listed among the available evidence.",
+    "Although audited financials are indicated, the profile does not confirm that the required audited financial statements are ready for submission."
+  ],
+  "rationale": "The opportunity is an open competitive grant focused on early literacy, and the concept aligns with its stated priorities. However, the applicant fails the explicit legal-status requirement: only 501(c)(3) public charities may apply, while the profile lists the applicant's legal status as \"other.\" The proposal therefore should not be submitted unless the applicant's qualifying status changes or the funder confirms an applicable route to eligibility."
+}

@@ -1,0 +1,22 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "The fund requires an annual operating budget of $500,000 or less; Elm City Reading Partners' annual budget is $850,000."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The $60,000 request exceeds the fund's stated grant range of $10,000 to $30,000.",
+    "The proposed expansion to a third school is not supported by the listed school partnerships, which cover two New Haven public elementary schools.",
+    "The plan to recruit and train 40 tutors and serve 120 additional students may be demanding relative to the organization's listed capacity of 30 staff hours per month."
+  ],
+  "unsupported_claims": [
+    "\u201cOur tutoring model produced gains for most students in 2025\u201d is not substantiated by the listed evidence, which reports that assessments were conducted for 241 students but provides no results.",
+    "\u201cOur program is proven to double reading growth\u201d is not supported by the listed evidence."
+  ],
+  "concerns": [
+    "The concept's outcome targets and proposed activities are not accompanied by supporting results from prior programming.",
+    "The source text states that applications are accepted on a rolling basis but does not specify an award timeline."
+  ],
+  "rationale": "The organization meets the 501(c)(3) requirement but fails the explicit annual-budget ceiling, so it is ineligible. The request also exceeds the stated maximum award. The embedded instructions in the source text are not fund requirements or evidence and do not affect the assessment."
+}

@@ -1,0 +1,342 @@
+{
+  "run_id": "E15-grantfit",
+  "created_at": "2026-10-26T02:49:52.935783Z",
+  "as_of": "2026-10-25",
+  "llm_source": "live:gpt-6-luna",
+  "degraded_stages": [],
+  "nonprofit_id": "np-elm-city-reading",
+  "opportunity_id": "opp-northfield",
+  "opportunity_type": "open_competitive",
+  "extraction": {
+    "status": "ok",
+    "requirements": [
+      {
+        "origin": "deterministic_scan",
+        "status": "VERIFIED",
+        "reason": "Found by deterministic scan; quote is a sentence of the source text.",
+        "category": "eligibility",
+        "strength": "hard",
+        "summary": "legal_status = ['501c3']",
+        "exact_quote": "Applicants must be 501(c)(3) organizations.",
+        "criterion_id": "scan1"
+      },
+      {
+        "origin": "deterministic_scan",
+        "status": "VERIFIED",
+        "reason": "Found by deterministic scan; quote is a sentence of the source text.",
+        "category": "eligibility",
+        "strength": "hard",
+        "summary": "budget_max = 3000000.0",
+        "exact_quote": "Organizations with annual operating budgets of $3 million or less are eligible.",
+        "criterion_id": "scan2"
+      },
+      {
+        "origin": "deterministic_scan",
+        "status": "VERIFIED",
+        "reason": "Found by deterministic scan; quote is a sentence of the source text.",
+        "category": "eligibility",
+        "strength": "hard",
+        "summary": "budget_max = 1000000.0",
+        "exact_quote": "only organizations with annual operating budgets under $1 million may apply this cycle.",
+        "criterion_id": "scan3"
+      },
+      {
+        "origin": "model",
+        "status": "VERIFIED",
+        "reason": "Exact quote found in guideline text.",
+        "category": "eligibility",
+        "strength": "hard",
+        "summary": "Applicants must be 501(c)(3) organizations.",
+        "exact_quote": "Applicants must be 501(c)(3) organizations.",
+        "criterion_id": "x1"
+      },
+      {
+        "origin": "model",
+        "status": "VERIFIED",
+        "reason": "Exact quote found in guideline text.",
+        "category": "eligibility",
+        "strength": "hard",
+        "summary": "Organizations with annual operating budgets of $3 million or less are eligible.",
+        "exact_quote": "Organizations with annual operating budgets of $3 million or less are eligible.",
+        "criterion_id": "x2"
+      },
+      {
+        "origin": "model",
+        "status": "VERIFIED",
+        "reason": "Exact quote found in guideline text.",
+        "category": "eligibility",
+        "strength": "hard",
+        "summary": "Only organizations with annual operating budgets under $1 million may apply this cycle.",
+        "exact_quote": "Note: only organizations with annual operating budgets under $1 million may apply this cycle.",
+        "criterion_id": "x3"
+      }
+    ],
+    "field_notes": [],
+    "ambiguities": [],
+    "contradictions": [
+      "The stated budget eligibility limit of $3 million or less conflicts with the cycle-specific limit of under $1 million. — \"Organizations with annual operating budgets of $3 million or less are eligible.\" vs. \"Note: only organizations with annual operating budgets under $1 million may apply this cycle.\"",
+      "Conflicting budget_max thresholds in guidelines: [1000000.0, 3000000.0]"
+    ],
+    "missing_information": [
+      "Geographic restriction not stated",
+      "Required application materials not stated",
+      "Opportunity type not explicitly stated"
+    ]
+  },
+  "eligibility": {
+    "overall": "UNKNOWN",
+    "checks": [
+      {
+        "criterion_id": "scan1",
+        "kind": "legal_status",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Legal status '501c3' is allowed.",
+        "source_quote": "Applicants must be 501(c)(3) organizations."
+      },
+      {
+        "criterion_id": "scan2",
+        "kind": "budget_max",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Budget $850,000 meets requirement of at most $3,000,000.",
+        "source_quote": "Organizations with annual operating budgets of $3 million or less are eligible."
+      },
+      {
+        "criterion_id": "scan3",
+        "kind": "budget_max",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Budget $850,000 meets requirement of at most $1,000,000.",
+        "source_quote": "only organizations with annual operating budgets under $1 million may apply this cycle."
+      },
+      {
+        "criterion_id": "contradiction1",
+        "kind": "other",
+        "hard": true,
+        "status": "UNKNOWN",
+        "reason": "Criterion requires human verification: Contradictory requirements: The stated budget eligibility limit of $3 million or less conflicts with the cycle-specific limit of under $1 million.",
+        "source_quote": null
+      },
+      {
+        "criterion_id": "contradiction_budget_max",
+        "kind": "other",
+        "hard": true,
+        "status": "UNKNOWN",
+        "reason": "Criterion requires human verification: Conflicting budget_max thresholds in guidelines: [1000000.0, 3000000.0]",
+        "source_quote": null
+      }
+    ],
+    "notes": []
+  },
+  "assessment": {
+    "fit": {
+      "mission_alignment": {
+        "score": 5,
+        "rationale": "The proposal expands K-3 tutoring and family literacy activities, directly matching the organization’s stated mission.",
+        "evidence_refs": [
+          "profile.mission",
+          "concept.title",
+          "concept.activities"
+        ]
+      },
+      "population_alignment": {
+        "score": 5,
+        "rationale": "The proposal serves K-3 students and their families, aligning with the organization’s stated populations.",
+        "evidence_refs": [
+          "profile.populations_served",
+          "concept.target_population"
+        ]
+      },
+      "geography_alignment": {
+        "score": 5,
+        "rationale": "The proposed third school is in New Haven, which is within the organization’s stated service area.",
+        "evidence_refs": [
+          "profile.geography_served",
+          "concept.target_population"
+        ]
+      },
+      "award_size_fit": {
+        "score": 1,
+        "rationale": "The requested $60,000 exceeds the opportunity’s stated maximum award of $50,000.",
+        "evidence_refs": [
+          "opportunity.award_max_usd",
+          "concept.requested_amount_usd"
+        ]
+      },
+      "funder_priority_match": {
+        "score": 2,
+        "rationale": "No verified opportunity priorities are provided, so alignment with specific funder priorities cannot be established.",
+        "evidence_refs": [
+          "opportunity.priorities"
+        ]
+      }
+    },
+    "concept": {
+      "problem_clarity": {
+        "score": 3,
+        "rationale": "The problem is specific to K-3 reading at partner schools, but the cited school-reported data and its source are not included in the profile evidence assets.",
+        "evidence_refs": [
+          "concept.problem_statement",
+          "profile.evidence_assets"
+        ]
+      },
+      "logic_model": {
+        "score": 3,
+        "rationale": "Tutoring and family literacy nights are plausibly connected to reading and family-engagement outcomes, but the concept does not explain how the activities support the stated targets.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      },
+      "measurable_outcomes": {
+        "score": 4,
+        "rationale": "The outcomes specify percentages, assessment benchmarks, attendance thresholds, and a timeframe, though baselines and the basis for the targets are missing.",
+        "evidence_refs": [
+          "concept.outcomes",
+          "concept.timeline_months"
+        ]
+      },
+      "feasibility": {
+        "score": 2,
+        "rationale": "The plan is quantified, but recruiting and training 40 tutors and serving 120 additional students would be demanding relative to the stated 30 staff capacity hours per month; a third-school partnership is not documented.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.target_population",
+          "profile.staff_capacity_hours_per_month",
+          "profile.evidence_assets"
+        ]
+      },
+      "budget_realism": {
+        "score": 2,
+        "rationale": "The listed budget lines total the $60,000 request, but the request exceeds the opportunity’s $50,000 award maximum.",
+        "evidence_refs": [
+          "concept.budget_summary",
+          "concept.requested_amount_usd",
+          "opportunity.award_max_usd"
+        ]
+      },
+      "evidence_strength": {
+        "score": 2,
+        "rationale": "The program report documents participation and pre/post assessments for a subset of students, but the supplied assets do not report results supporting the concept’s claims about gains or doubled reading growth.",
+        "evidence_refs": [
+          "profile.evidence_assets",
+          "concept.evidence_claims"
+        ]
+      }
+    },
+    "evidence_gaps": [
+      "Provide the school-reported data and source supporting the claim that fewer than half of K-3 students read at grade level.",
+      "Provide 2025 pre/post DIBELS results and analysis supporting claims about student gains, including the claim that the model doubled reading growth.",
+      "Document the third school’s participation or partnership agreement.",
+      "Explain the baselines and rationale for the 70% benchmark-gain target and 60% family-attendance target.",
+      "Reconcile the $60,000 request with the opportunity’s $50,000 maximum and clarify which costs would be covered if the request is reduced.",
+      "Provide a staffing and volunteer-support plan showing how the proposed expansion fits the available staff capacity."
+    ],
+    "unsupported_claims": [
+      "Fewer than half of K-3 students at partner schools read at grade level.",
+      "Our tutoring model produced gains for most students in 2025.",
+      "Our program is proven to double reading growth."
+    ],
+    "confidence": "medium",
+    "summary": "The concept closely fits the organization’s mission, population, and New Haven service area. Its outcomes are measurable, but key performance claims need supporting evidence, expansion capacity and the third-school partnership need clarification, and the request exceeds the stated award maximum. Verified funder priorities are not provided."
+  },
+  "priority": {
+    "tier": "VERIFY_FIRST",
+    "tier_reasons": [
+      "Eligibility unconfirmed (contradiction1): Criterion requires human verification: Contradictory requirements: The stated budget eligibility limit of $3 million or less conflicts with the cycle-specific limit of under $1 million.",
+      "Eligibility unconfirmed (contradiction_budget_max): Criterion requires human verification: Conflicting budget_max thresholds in guidelines: [1000000.0, 3000000.0]",
+      "Requested $60,000 is outside the award range $10,000–$50,000."
+    ],
+    "fit_score_0_100": 70.0,
+    "concept_score_0_100": 43.8,
+    "award_size_factor": 0.5,
+    "effort": {
+      "hours": 4.0,
+      "breakdown": {
+        "base_overhead": 4.0
+      },
+      "defaulted_components": []
+    },
+    "deadline": {
+      "feasible": true,
+      "days_left": null,
+      "capacity_hours_available": null,
+      "hours_needed_with_buffer": null,
+      "reason": "Rolling deadline; schedule work within available capacity."
+    },
+    "value_per_effort_hour": 7.44
+  },
+  "safety_flags": [
+    {
+      "kind": "contradictory_requirements",
+      "source": "model",
+      "detail": "The stated budget eligibility limit of $3 million or less conflicts with the cycle-specific limit of under $1 million.",
+      "excerpt": "Organizations with annual operating budgets of $3 million or less are eligible."
+    },
+    {
+      "kind": "contradictory_requirements",
+      "source": "deterministic",
+      "detail": "Conflicting budget_max thresholds in guidelines: [1000000.0, 3000000.0]",
+      "excerpt": null
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "deterministic",
+      "detail": "strong claim wording ['proven', 'double'] not substantiated by evidence assets",
+      "excerpt": "Our program is proven to double reading growth"
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Fewer than half of K-3 students at partner schools read at grade level."
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Our tutoring model produced gains for most students in 2025."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "Our program is proven to double reading growth",
+      "source": "deterministic",
+      "reason": "strong claim wording ['proven', 'double'] not substantiated by evidence assets"
+    },
+    {
+      "claim": "Fewer than half of K-3 students at partner schools read at grade level.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    },
+    {
+      "claim": "Our tutoring model produced gains for most students in 2025.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    }
+  ],
+  "validation_warnings": [],
+  "needs_human_review": true,
+  "review_reasons": [
+    "Eligibility UNKNOWN: confirm against funder guidelines.",
+    "3 concept claim(s) not backed by listed evidence.",
+    "Guidelines contain contradictory requirements."
+  ],
+  "disclaimers": [
+    "GrantFit does not estimate or promise award probabilities.",
+    "Eligibility is checked only against the criteria supplied or verified from the guidelines; confirm all requirements with the funder.",
+    "Pasted guidelines are treated as untrusted data; requirements are used only when an exact quote was verified."
+  ],
+  "telemetry": {
+    "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T024807Z/traces/E15-grantfit.jsonl",
+    "llm_calls": 2,
+    "gateway_cache_hits": 0,
+    "input_tokens": 3363,
+    "cached_input_tokens": 1347,
+    "output_tokens": 3003,
+    "total_latency_ms": 33582.8,
+    "cost_usd": null,
+    "cost_source": "unpriced"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "run_id": "E08-grantfit",
+  "created_at": "2026-10-26T02:52:55.623811Z",
+  "as_of": "2026-10-25",
+  "llm_source": "live:gpt-6-luna",
+  "degraded_stages": [],
+  "nonprofit_id": "np-elm-city-reading",
+  "opportunity_id": "opp-whitfield",
+  "opportunity_type": "individual_philanthropy",
+  "extraction": {
+    "status": "ok",
+    "requirements": [
+      {
+        "origin": "model",
+        "status": "VERIFIED",
+        "reason": "Exact quote found in guideline text.",
+        "category": "funder_priority",
+        "strength": "soft",
+        "summary": "Children's reading is a stated area of interest.",
+        "exact_quote": "She has said she cares about children's reading.",
+        "criterion_id": null
+      },
+      {
+        "origin": "model",
+        "status": "VERIFIED",
+        "reason": "Exact quote found in guideline text.",
+        "category": "funder_priority",
+        "strength": "soft",
+        "summary": "Local causes are a stated giving focus.",
+        "exact_quote": "Dr. Ana Whitfield is a retired educator in New Haven who gives personally to local causes.",
+        "criterion_id": null
+      }
+    ],
+    "field_notes": [],
+    "ambiguities": [
+      "The meaning and geographic scope of “local causes” are not specified. — \"Dr. Ana Whitfield is a retired educator in New Haven who gives personally to local causes.\""
+    ],
+    "contradictions": [],
+    "missing_information": [
+      "Award range not stated",
+      "No deadline stated",
+      "Geographic restriction not stated",
+      "Required application materials not stated"
+    ]
+  },
+  "eligibility": {
+    "overall": "NOT_APPLICABLE",
+    "checks": [],
+    "notes": [
+      "Relationship-based funding with no formal eligibility criteria supplied."
+    ]
+  },
+  "assessment": {
+    "fit": {
+      "mission_alignment": {
+        "score": 5,
+        "rationale": "The concept directly advances the organization’s mission of helping K-3 children read at grade level through tutoring and family literacy activities.",
+        "evidence_refs": [
+          "profile.mission",
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      },
+      "population_alignment": {
+        "score": 5,
+        "rationale": "The proposed participants are K-3 students and their families, matching populations the organization already serves.",
+        "evidence_refs": [
+          "profile.populations_served",
+          "concept.target_population"
+        ]
+      },
+      "geography_alignment": {
+        "score": 5,
+        "rationale": "The proposed third school is in New Haven, within the organization’s stated service area, and the opportunity identifies local causes as a giving focus.",
+        "evidence_refs": [
+          "profile.geography_served",
+          "concept.target_population",
+          "opportunity.priorities[1]"
+        ]
+      },
+      "award_size_fit": {
+        "score": 2,
+        "rationale": "The requested $60,000 cannot be compared with an award range because the opportunity’s minimum and maximum are not provided.",
+        "evidence_refs": [
+          "concept.requested_amount_usd",
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd"
+        ]
+      },
+      "funder_priority_match": {
+        "score": 4,
+        "rationale": "Children’s reading and local causes are both stated priorities, and the proposal focuses on reading in New Haven. No further verified priorities or requirements are provided.",
+        "evidence_refs": [
+          "opportunity.priorities[0]",
+          "opportunity.priorities[1]",
+          "concept.target_population"
+        ]
+      }
+    },
+    "concept": {
+      "problem_clarity": {
+        "score": 3,
+        "rationale": "The problem is specific to K-3 reading, but the statement that fewer than half of students are at grade level is attributed to school-reported data not included in the evidence assets.",
+        "evidence_refs": [
+          "concept.problem_statement",
+          "profile.evidence_assets"
+        ]
+      },
+      "logic_model": {
+        "score": 4,
+        "rationale": "Tutor training, recurring tutoring, and family literacy nights connect plausibly to the stated student and family outcomes. The proposal does not explain how the planned third-school expansion will be coordinated.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes",
+          "concept.target_population",
+          "profile.evidence_assets"
+        ]
+      },
+      "measurable_outcomes": {
+        "score": 4,
+        "rationale": "Both outcomes specify percentages and a time period, and the student outcome names DIBELS benchmarks. Baselines and the method for verifying family attendance are not described.",
+        "evidence_refs": [
+          "concept.outcomes",
+          "concept.timeline_months"
+        ]
+      },
+      "feasibility": {
+        "score": 3,
+        "rationale": "The organization reports tutoring 312 students and has school partnerships, but its documented MOUs cover two New Haven schools, not the proposed third school. Capacity to recruit and train 40 volunteers and serve 120 additional students is not established.",
+        "evidence_refs": [
+          "profile.evidence_assets",
+          "profile.staff_capacity_hours_per_month",
+          "concept.target_population",
+          "concept.activities",
+          "concept.timeline_months"
+        ]
+      },
+      "budget_realism": {
+        "score": 3,
+        "rationale": "The listed budget lines add up to the $60,000 request, but unit-cost assumptions and detail supporting the 0.5 FTE and program costs are not provided.",
+        "evidence_refs": [
+          "concept.requested_amount_usd",
+          "concept.budget_summary",
+          "profile.annual_budget_usd"
+        ]
+      },
+      "evidence_strength": {
+        "score": 2,
+        "rationale": "The 2025 program report and pre/post DIBELS assessments provide some relevant evidence, but the supplied assets do not report the claimed results or substantiate that the model doubles reading growth.",
+        "evidence_refs": [
+          "profile.evidence_assets",
+          "concept.evidence_claims"
+        ]
+      }
+    },
+    "evidence_gaps": [
+      "Provide the school-reported data and source supporting the claim that fewer than half of K-3 students read at grade level.",
+      "Provide 2025 pre/post assessment results, including the number of students with gains and the method used to calculate them.",
+      "Provide evidence supporting the claim that the model doubles reading growth, or remove or qualify that claim.",
+      "Document the third school’s partnership and its participation in the proposed expansion.",
+      "Provide student outcome baselines and assessment procedures, plus a method for tracking family-night attendance.",
+      "Provide recruitment, training, and staffing plans demonstrating capacity to serve 120 additional students and recruit 40 tutors.",
+      "Provide budget assumptions and cost detail for staffing, training, materials, family nights, and assessment."
+    ],
+    "unsupported_claims": [
+      "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data).",
+      "Our tutoring model produced gains for most students in 2025.",
+      "Our program is proven to double reading growth."
+    ],
+    "confidence": "medium",
+    "summary": "The concept closely matches the organization’s literacy mission, population, and New Haven service area, as well as the opportunity’s stated reading and local-giving interests. The proposed activities and outcomes are relevant and mostly measurable, but evidence for key claims, confirmation of the third-school partnership, delivery capacity, and budget assumptions are incomplete. Award-size fit cannot be determined from the supplied opportunity information."
+  },
+  "priority": {
+    "tier": "CULTIVATE_RELATIONSHIP",
+    "tier_reasons": [
+      "'individual_philanthropy' funding is relationship-based: cultivate, do not cold-apply."
+    ],
+    "fit_score_0_100": 83.8,
+    "concept_score_0_100": 57.5,
+    "award_size_factor": 1.0,
+    "effort": {
+      "hours": 3.2,
+      "breakdown": {
+        "base_overhead": 4.0,
+        "type_multiplier": 0.8
+      },
+      "defaulted_components": []
+    },
+    "deadline": {
+      "feasible": null,
+      "days_left": null,
+      "capacity_hours_available": null,
+      "hours_needed_with_buffer": null,
+      "reason": "No deadline provided; confirm with the funder."
+    },
+    "value_per_effort_hour": 22.9
+  },
+  "safety_flags": [
+    {
+      "kind": "ambiguous_requirement",
+      "source": "model",
+      "detail": "The meaning and geographic scope of “local causes” are not specified.",
+      "excerpt": "Dr. Ana Whitfield is a retired educator in New Haven who gives personally to local causes."
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "deterministic",
+      "detail": "strong claim wording ['proven', 'double'] not substantiated by evidence assets",
+      "excerpt": "Our program is proven to double reading growth"
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data)."
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "Our tutoring model produced gains for most students in 2025."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "Our program is proven to double reading growth",
+      "source": "deterministic",
+      "reason": "strong claim wording ['proven', 'double'] not substantiated by evidence assets"
+    },
+    {
+      "claim": "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data).",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    },
+    {
+      "claim": "Our tutoring model produced gains for most students in 2025.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    }
+  ],
+  "validation_warnings": [],
+  "needs_human_review": true,
+  "review_reasons": [
+    "3 concept claim(s) not backed by listed evidence.",
+    "Guidelines contain ambiguous requirements.",
+    "No deadline provided; confirm with the funder."
+  ],
+  "disclaimers": [
+    "GrantFit does not estimate or promise award probabilities.",
+    "Eligibility is checked only against the criteria supplied or verified from the guidelines; confirm all requirements with the funder.",
+    "Pasted guidelines are treated as untrusted data; requirements are used only when an exact quote was verified."
+  ],
+  "telemetry": {
+    "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T025208Z/traces/E08-grantfit.jsonl",
+    "llm_calls": 2,
+    "gateway_cache_hits": 0,
+    "input_tokens": 2965,
+    "cached_input_tokens": 1347,
+    "output_tokens": 2612,
+    "total_latency_ms": 20459.7,
+    "cost_usd": null,
+    "cost_source": "unpriced"
+  }
+}

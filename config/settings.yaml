@@ -1,0 +1,5 @@
+llm:
+  model: gpt-6-luna            # required course model, routed via Portkey
+  base_url: https://api.portkey.ai/v1
+  timeout_seconds: 60
+  max_output_tokens: 4000

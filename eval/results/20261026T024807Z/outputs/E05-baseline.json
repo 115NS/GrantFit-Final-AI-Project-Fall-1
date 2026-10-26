@@ -1,0 +1,24 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "The opportunity is limited to 501(c)(3) public charities, while the nonprofit's legal status is listed as \"other\"."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The plan to serve a third school is not supported by the listed partner evidence, which covers two New Haven schools.",
+    "The 70% DIBELS benchmark-gain target and 60% family-night attendance target need a clear rationale, measurement plan, and baseline.",
+    "The staffing and implementation plan should explain how 40 tutors will be recruited, trained, scheduled, and supported to serve 120 students with the listed staff capacity."
+  ],
+  "unsupported_claims": [
+    "The claim that fewer than half of K-3 students at partner schools read at grade level is attributed to school-reported data, but no such data is listed as evidence.",
+    "The claim that the tutoring model produced gains for most students in 2025 is not supported by the listed evidence, which notes assessments for 241 students but provides no results.",
+    "The claim that the program is proven to double reading growth is not supported by the listed evidence."
+  ],
+  "concerns": [
+    "The legal-status requirement is a hard eligibility barrier unless the applicant's status is inaccurate or an allowed application arrangement is confirmed by the funder.",
+    "The opportunity requires two letters of support; the listed MOUs do not establish that those letters are available.",
+    "The application also requires a logic model and audited financials. Audited financials are listed in the profile, but completion of the required application materials is not established."
+  ],
+  "rationale": "The organization serves Connecticut children, is below the stated budget ceiling, and its literacy focus aligns with the funder's priorities. However, it fails the explicit 501(c)(3) public-charity requirement based on the profile's listed legal status, so it is not eligible as described."
+}

@@ -1,0 +1,252 @@
+{
+  "run_id": "E02-grantfit",
+  "created_at": "2026-10-26T02:52:23.133675Z",
+  "as_of": "2026-10-25",
+  "llm_source": "live:gpt-6-luna",
+  "degraded_stages": [],
+  "nonprofit_id": "np-quinnipiac-food",
+  "opportunity_id": "opp-hartford-hunger-2027",
+  "opportunity_type": "open_competitive",
+  "extraction": null,
+  "eligibility": {
+    "overall": "PASS",
+    "checks": [
+      {
+        "criterion_id": "c1",
+        "kind": "legal_status",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Legal status '501c3' is allowed.",
+        "source_quote": "Applicants must be registered 501(c)(3) nonprofits."
+      },
+      {
+        "criterion_id": "c2",
+        "kind": "budget_max",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Budget $1,200,000 meets requirement of at most $5,000,000.",
+        "source_quote": "Organizations with annual budgets up to $5 million may apply."
+      },
+      {
+        "criterion_id": "c3",
+        "kind": "geography",
+        "hard": true,
+        "status": "PASS",
+        "reason": "Serves ['hamden, connecticut', 'north haven, connecticut', 'wallingford, connecticut'] within allowed ['Connecticut'].",
+        "source_quote": "Services must be delivered in Connecticut."
+      }
+    ],
+    "notes": []
+  },
+  "assessment": {
+    "fit": {
+      "mission_alignment": {
+        "score": 5,
+        "rationale": "The proposal advances the organization’s mission of reliable healthy-food access through fresh produce deliveries.",
+        "evidence_refs": [
+          "profile.mission",
+          "concept.title",
+          "concept.activities"
+        ]
+      },
+      "population_alignment": {
+        "score": 5,
+        "rationale": "The proposal directly serves homebound seniors, matching a stated population served and the opportunity’s senior food-access focus.",
+        "evidence_refs": [
+          "profile.populations_served",
+          "concept.target_population",
+          "opportunity.priorities[0]"
+        ]
+      },
+      "geography_alignment": {
+        "score": 5,
+        "rationale": "Hamden and North Haven are in Connecticut, and the opportunity calls for services delivered in Connecticut.",
+        "evidence_refs": [
+          "profile.geography_served",
+          "concept.target_population",
+          "opportunity.hard_criteria[2]"
+        ]
+      },
+      "award_size_fit": {
+        "score": 4,
+        "rationale": "The $50,000 request falls within the $20,000–$80,000 award range; the budget summary also totals $50,000.",
+        "evidence_refs": [
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd",
+          "concept.requested_amount_usd",
+          "concept.budget_summary"
+        ]
+      },
+      "funder_priority_match": {
+        "score": 5,
+        "rationale": "The concept addresses homebound senior food access, fresh produce and nutrition, and referrals through a senior service provider. No restriction conflicts are listed.",
+        "evidence_refs": [
+          "opportunity.priorities[0]",
+          "opportunity.priorities[1]",
+          "opportunity.priorities[2]",
+          "opportunity.restrictions",
+          "concept.target_population",
+          "concept.activities"
+        ]
+      }
+    },
+    "concept": {
+      "problem_clarity": {
+        "score": 4,
+        "rationale": "The concept identifies a specific population and a fresh-produce access concern, but the claim that the seniors receive shelf-stable meals and little fresh produce is not established by the supplied evidence.",
+        "evidence_refs": [
+          "concept.problem_statement",
+          "profile.evidence_assets[0]",
+          "profile.evidence_assets[1]"
+        ]
+      },
+      "logic_model": {
+        "score": 4,
+        "rationale": "Sourcing, packing, and delivering produce boxes are directly connected to the proposed produce-access and consumption outcomes; the link between quarterly phone check-ins and those outcomes is less specified.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.outcomes"
+        ]
+      },
+      "measurable_outcomes": {
+        "score": 4,
+        "rationale": "The concept specifies a participant count, minimum boxes per participant, timeframe, and a surveyed produce-consumption outcome at two time points. Survey method and denominator details are not provided.",
+        "evidence_refs": [
+          "concept.outcomes",
+          "concept.timeline_months"
+        ]
+      },
+      "feasibility": {
+        "score": 3,
+        "rationale": "The proposed 12-month delivery effort is concrete and the organization has senior-service referral experience, but the supplied information does not establish farm commitments, delivery capacity for 150 participants, or whether 40 staff hours per month is sufficient.",
+        "evidence_refs": [
+          "concept.activities",
+          "concept.target_population",
+          "concept.timeline_months",
+          "profile.staff_capacity_hours_per_month",
+          "profile.evidence_assets[2]"
+        ]
+      },
+      "budget_realism": {
+        "score": 3,
+        "rationale": "The listed costs add to the $50,000 request and the request is within the award range, but unit-cost assumptions and cost support for the proposed volume of produce deliveries are not supplied.",
+        "evidence_refs": [
+          "concept.budget_summary",
+          "concept.requested_amount_usd",
+          "concept.outcomes",
+          "opportunity.award_min_usd",
+          "opportunity.award_max_usd"
+        ]
+      },
+      "evidence_strength": {
+        "score": 3,
+        "rationale": "The organization has relevant delivery and client-survey evidence plus a senior-center referral agreement, but the supplied evidence does not document the stated produce-access gap or results from a comparable produce-box program.",
+        "evidence_refs": [
+          "profile.evidence_assets",
+          "concept.problem_statement",
+          "concept.evidence_claims"
+        ]
+      }
+    },
+    "evidence_gaps": [
+      "Document the asserted gap in fresh-produce access among the proposed participants, including whether the 410 seniors receive shelf-stable meals and little fresh produce.",
+      "Clarify the survey population and method, and provide a baseline and evaluation plan for measuring produce consumption at 6 and 12 months.",
+      "Provide confirmation from the two farms, produce pricing or other cost assumptions, and a delivery plan for at least 45 boxes per participant over 12 months.",
+      "Document referral volume and coverage for the proposed 150 participants, including North Haven referrals.",
+      "Provide staffing and delivery-capacity details showing how the program will be operated within available staff time.",
+      "Provide a detailed budget or unit-cost breakdown supporting produce purchasing, driver stipends, supplies, and coordinator time."
+    ],
+    "unsupported_claims": [
+      "The claim that the 410 homebound seniors on the delivery list receive shelf-stable meals and little fresh produce is not established by the supplied evidence assets.",
+      "The claim that the survey demonstrates strong demand for produce goes beyond the supplied survey result that 87% of respondents reported eating more fresh produce.",
+      "The proposed referral of 150 homebound seniors in Hamden and North Haven is not established by the supplied referral agreement, which only identifies Hamden Senior Center for referrals."
+    ],
+    "confidence": "medium",
+    "summary": "The proposal has strong mission and opportunity alignment, with a request inside the stated award range and measurable delivery targets. Its main weaknesses are unsupported details about the produce-access gap, limited operational and cost substantiation, and missing evaluation specifics."
+  },
+  "priority": {
+    "tier": "PURSUE_NOW",
+    "tier_reasons": [
+      "Eligible, fit 96.2, concept 63.8; deadline: 130.7h of proposal capacity in 98 days vs. 33.6h needed (incl. buffer)."
+    ],
+    "fit_score_0_100": 96.2,
+    "concept_score_0_100": 63.8,
+    "award_size_factor": 1.0,
+    "effort": {
+      "hours": 28.0,
+      "breakdown": {
+        "base_overhead": 4.0,
+        "narrative_page": 12.0,
+        "budget": 6.0,
+        "evaluation_plan": 6.0
+      },
+      "defaulted_components": []
+    },
+    "deadline": {
+      "feasible": true,
+      "days_left": 98,
+      "capacity_hours_available": 130.7,
+      "hours_needed_with_buffer": 33.6,
+      "reason": "130.7h of proposal capacity in 98 days vs. 33.6h needed (incl. buffer)."
+    },
+    "value_per_effort_hour": 2.97
+  },
+  "safety_flags": [
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "The claim that the 410 homebound seniors on the delivery list receive shelf-stable meals and little fresh produce is not established by the supplied evidence as"
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "The claim that the survey demonstrates strong demand for produce goes beyond the supplied survey result that 87% of respondents reported eating more fresh produ"
+    },
+    {
+      "kind": "unsupported_claim",
+      "source": "model",
+      "detail": "Model judged this claim not backed by the supplied evidence assets.",
+      "excerpt": "The proposed referral of 150 homebound seniors in Hamden and North Haven is not established by the supplied referral agreement, which only identifies Hamden Sen"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "The claim that the 410 homebound seniors on the delivery list receive shelf-stable meals and little fresh produce is not established by the supplied evidence assets.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    },
+    {
+      "claim": "The claim that the survey demonstrates strong demand for produce goes beyond the supplied survey result that 87% of respondents reported eating more fresh produce.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    },
+    {
+      "claim": "The proposed referral of 150 homebound seniors in Hamden and North Haven is not established by the supplied referral agreement, which only identifies Hamden Senior Center for referrals.",
+      "source": "model",
+      "reason": "Model judged this claim not backed by the supplied evidence assets."
+    }
+  ],
+  "validation_warnings": [],
+  "needs_human_review": true,
+  "review_reasons": [
+    "3 concept claim(s) not backed by listed evidence."
+  ],
+  "disclaimers": [
+    "GrantFit does not estimate or promise award probabilities.",
+    "Eligibility is checked only against the criteria supplied or verified from the guidelines; confirm all requirements with the funder.",
+    "Pasted guidelines are treated as untrusted data; requirements are used only when an exact quote was verified."
+  ],
+  "telemetry": {
+    "trace_path": "/Users/navyasharma/Desktop/Yale Fall 1/AI Foundations/FInal Project/GrantFit/eval/results/20261026T025208Z/traces/E02-grantfit.jsonl",
+    "llm_calls": 1,
+    "gateway_cache_hits": 0,
+    "input_tokens": 1859,
+    "cached_input_tokens": 1856,
+    "output_tokens": 2025,
+    "total_latency_ms": 14596.5,
+    "cost_usd": null,
+    "cost_source": "unpriced"
+  }
+}

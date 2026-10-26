@@ -1,0 +1,22 @@
+{
+  "eligibility": "FAIL",
+  "failed_requirements": [
+    "The organization's annual budget is $4.2 million, exceeding the $3 million maximum."
+  ],
+  "opportunity_type": "open_competitive",
+  "recommendation": "NOT_ELIGIBLE",
+  "concept_weaknesses": [
+    "The proposal targets a third school, but the profile documents MOUs with only two New Haven elementary schools; the third school's participation is not established.",
+    "The outcome targets need clearer justification, including how DIBELS benchmark-level gains will be measured and how family attendance will be tracked."
+  ],
+  "unsupported_claims": [
+    "The claim that the tutoring model produced gains for most students in 2025 is not supported by the listed evidence, which reports that assessments were conducted for 241 students but gives no results.",
+    "The claim that the program is proven to double reading growth is not supported by the listed evidence.",
+    "The statement that fewer than half of K-3 students at partner schools read at grade level is attributed to school-reported data, but no such data is listed among the evidence assets."
+  ],
+  "concerns": [
+    "The opportunity requires two letters of support; the profile does not indicate whether these are available.",
+    "The proposed volunteer recruitment, twice-weekly tutoring for 120 students, and monthly family events may be demanding relative to the listed 30 staff-capacity hours per month; implementation capacity should be clarified."
+  ],
+  "rationale": "The organization fits the stated legal-status and geography criteria and the concept aligns with the funder's early literacy priorities. However, the verified annual-budget limit is a hard requirement, and the organization's $4.2 million budget exceeds it. The organization is therefore ineligible for this opportunity."
+}

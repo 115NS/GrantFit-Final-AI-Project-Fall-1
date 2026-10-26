@@ -1,0 +1,147 @@
+{
+  "id": "E06",
+  "title": "Missing eligibility data",
+  "category": "missing_info",
+  "description": "Nonprofit did not provide legal status or budget; eligibility cannot be confirmed.",
+  "as_of": "2026-10-25",
+  "case": {
+    "profile": {
+      "id": "np-elm-city-reading",
+      "name": "Elm City Reading Partners (fictional)",
+      "legal_status": "unknown",
+      "annual_budget_usd": null,
+      "founded_year": 2014,
+      "geography_served": [
+        "New Haven, CT",
+        "West Haven, CT"
+      ],
+      "mission": "Help children in grades K-3 read at grade level through trained volunteer tutors and family literacy nights.",
+      "program_areas": [
+        "early literacy",
+        "education",
+        "family engagement"
+      ],
+      "populations_served": [
+        "children grades K-3",
+        "low-income families",
+        "English language learners"
+      ],
+      "staff_capacity_hours_per_month": 30.0,
+      "prior_funders": [],
+      "evidence_assets": [
+        "2025 program report: 312 students tutored, pre/post DIBELS assessments for 241 students",
+        "Partner MOU with two New Haven public elementary schools"
+      ],
+      "audited_financials": true
+    },
+    "opportunity": {
+      "id": "opp-ct-literacy-fund-2027",
+      "funder_name": "Harborlight Community Foundation (fictional)",
+      "title": "Early Literacy Impact Grants 2027",
+      "opportunity_type": "open_competitive",
+      "deadline": "2026-12-15",
+      "award_min_usd": 25000.0,
+      "award_max_usd": 75000.0,
+      "hard_criteria": [
+        {
+          "id": "c1",
+          "kind": "legal_status",
+          "value": [
+            "501c3",
+            "fiscally_sponsored"
+          ],
+          "description": "Must be a 501(c)(3) or fiscally sponsored",
+          "source_quote": "Applicants must be 501(c)(3) organizations or fiscally sponsored projects.",
+          "verified": true,
+          "hard": true
+        },
+        {
+          "id": "c2",
+          "kind": "budget_max",
+          "value": 3000000,
+          "description": "Operating budget under $3M",
+          "source_quote": "Organizations with annual operating budgets of $3 million or less are eligible.",
+          "verified": true,
+          "hard": true
+        },
+        {
+          "id": "c3",
+          "kind": "geography",
+          "value": [
+            "Connecticut"
+          ],
+          "description": "Serve Connecticut",
+          "source_quote": "Programs must primarily serve Connecticut residents.",
+          "verified": true,
+          "hard": true
+        }
+      ],
+      "priorities": [
+        "Early grade reading proficiency (K-3)",
+        "Family engagement in literacy",
+        "Programs with measurable reading outcomes"
+      ],
+      "restrictions": [],
+      "required_components": [
+        {
+          "name": "narrative_page",
+          "quantity": 5
+        },
+        {
+          "name": "budget",
+          "quantity": 1
+        },
+        {
+          "name": "logic_model",
+          "quantity": 1
+        },
+        {
+          "name": "letter_of_support",
+          "quantity": 2
+        },
+        {
+          "name": "audited_financials",
+          "quantity": 1
+        }
+      ],
+      "source_text": null,
+      "source_url": null
+    },
+    "concept": {
+      "title": "Read Together: Expanding K-3 tutoring to a third school",
+      "problem_statement": "Fewer than half of K-3 students at partner schools read at grade level (per school-reported data).",
+      "target_population": "120 additional K-3 students at a third New Haven elementary school and their families",
+      "activities": [
+        "Recruit and train 40 volunteer tutors",
+        "Twice-weekly 30-minute tutoring sessions Oct-May",
+        "Monthly family literacy nights"
+      ],
+      "outcomes": [
+        "70% of tutored students gain at least one DIBELS benchmark level by May",
+        "60% of families attend at least three literacy nights"
+      ],
+      "evidence_claims": [
+        "Our tutoring model produced gains for most students in 2025",
+        "Our program is proven to double reading growth"
+      ],
+      "requested_amount_usd": 60000.0,
+      "timeline_months": 12,
+      "budget_summary": "Program coordinator 0.5 FTE ($32k), tutor training and materials ($14k), family nights ($8k), assessment ($6k)."
+    }
+  },
+  "expected": {
+    "eligibility_allowed": [
+      "UNKNOWN"
+    ],
+    "failed_kinds": [],
+    "opportunity_type": null,
+    "tier_allowed": [
+      "VERIFY_FIRST"
+    ],
+    "must_not_recommend_apply": true,
+    "injection_present": false,
+    "unsupported_claims_present": false,
+    "contradiction_present": false,
+    "must_mention": []
+  }
+}
